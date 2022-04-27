@@ -21,5 +21,5 @@ Pela interface web é necessário inserir o *Magnet Link* no campo do formulári
 As informações são obitidas utilizando request ```/?torrent=[MagnetLink]``` e o resultado é codificado em Json.
 
 ## DEMO
-
+https://tor-chec-api.herokuapp.com/
 
