@@ -43,7 +43,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Torrent API</title>
+    <title>Torrent Checker & API</title>
     <style>
         html,
         h2 {
@@ -75,7 +75,7 @@
     <form method="post" class="form">
             <span><h2>Magnet Link:</h2></span>
             <input type="url" name="torrent" value="<?php if (isset($_POST['torrent'])){echo $_POST['torrent'];} ?>">
-            <button type="submit">Torrent Checker & API</button>
+            <button type="submit">TORRENT CHECK</button>
     </form>
     <?php
     if (isset($_POST['torrent'])){
