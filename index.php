@@ -57,17 +57,30 @@
             background-color: #f5f5f5;
             margin: 20px auto auto 20px;
         }
-        .form input {
+        .form input{
             width: 100%;
             padding: 8px;
             margin-top: 8px;
             margin-bottom: 8px;
         }
-        .form button {
+        .form button{
             padding: 8px;
             font-weight: bold;
             cursor: pointer;
             margin-bottom: 10px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            background-color: #eee;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .footer a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -106,5 +119,8 @@
         }
     }
     ?>
+    <div class="footer">
+        <b><a href="https://github.com/evandrofadul/torrent-checker-api" target="_blank">GitHub</a></b>
+    </div>
 </body>
 </html>
