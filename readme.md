@@ -1,3 +1,5 @@
+<p align="center"><img src="https://user-images.githubusercontent.com/91099049/165655548-25be6e23-c822-4bf8-bdc9-b77989a1ea7c.gif"/></p>
+
 ## Torrent Checker & API
 Aplicação web em PHP que possibilita verificar informações de arquivo torrent utilizando o *Magnet Link* do mesmo.
 
