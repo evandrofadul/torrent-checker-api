@@ -94,7 +94,7 @@ if (isset($_GET['torrent'])) {
     </form>
     <?php
     if (isset($_POST['torrent'])){
-        $json = file_get_contents('http://localhost/?torrent=' . urlencode($_POST['torrent']));
+        $json = file_get_contents('https://tor-chec-api.herokuapp.com/?torrent=' . urlencode($_POST['torrent']));
         $data = json_decode($json, true);
 
         if (isset($data['error'])) {
