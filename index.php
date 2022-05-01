@@ -8,7 +8,6 @@ if (isset($_GET['torrent'])) {
     preg_match_all('/&tr=(.*?)&/', urldecode($_GET['torrent']), $magnetInfo);
 
     $torrent = new Torrent("http://itorrents.org/torrent/{$hashInfo[1]}.torrent");
-
     if ($torrent->size() != null) {
         $torrentFile ='';
         foreach ($torrent->content() as $key => $item) {
@@ -40,7 +39,7 @@ if (isset($_GET['torrent'])) {
     }
     echo json_encode(['error' => 'torrent not found']);
     return http_response_code(200); 
-} else
+}
 ?>
 <!DOCTYPE html>
 <head>
@@ -94,12 +93,12 @@ if (isset($_GET['torrent'])) {
     </form>
     <?php
     if (isset($_POST['torrent'])){
-        $json = file_get_contents('https://tor-chec-api.herokuapp.com/?torrent=' . urlencode($_POST['torrent']));
+        $json = file_get_contents('http://localhost/?torrent=' . urlencode($_POST['torrent']));
         $data = json_decode($json, true);
 
         if (isset($data['error'])) {
             echo $data['error'];
-            return http_response_code(200);
+            return http_response_code(404);
         }
         $torrentHtml = '<form method="get"><button type="submit" name="torrent" value="'. $_POST['torrent'] .'">GET API (Json)</button></form>';
 
